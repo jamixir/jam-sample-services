@@ -1,0 +1,19 @@
+[package]
+name = "hash-chain-service"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "hash-chain-service"
+path = "src/main.rs"
+
+[dependencies]
+polkavm-derive = "=0.30.0"
+blake2b_simd = { version = "1.0.2", default-features = false }
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = "abort"
+codegen-units = 1

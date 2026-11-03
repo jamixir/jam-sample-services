@@ -1,0 +1,9 @@
+[package]
+name = "jam-pack"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+polkavm-linker = "=0.30.0"
+polkavm-common = "=0.30.0"
